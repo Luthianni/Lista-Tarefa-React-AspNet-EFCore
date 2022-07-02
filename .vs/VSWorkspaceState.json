@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Backend",
+    "\\Backend\\src",
+    "\\Backend\\src\\ProAtividade.Data",
+    "\\Backend\\src\\ProAtividade.Data\\Context",
+    "\\Backend\\src\\ProAtividade.Domain",
+    "\\Backend\\src\\ProAtividade.Domain\\Entities",
+    "\\Backend\\src\\ProAtividade.Domain\\Interfaces"
+  ],
+  "SelectedNode": "\\Backend\\src\\ProAtividade.sln",
+  "PreviewInSolutionExplorer": false
+}
