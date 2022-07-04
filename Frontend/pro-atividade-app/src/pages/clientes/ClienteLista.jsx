@@ -2,7 +2,7 @@ import { FormControl, InputGroup } from 'react-bootstrap';
 import TitlePage from '../../components/TitlePage';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const clientes = [
     {
@@ -36,7 +36,7 @@ const clientes = [
 ]
 
 export default function ClienteLista() {
-    const history = useHistory();
+    const navigate = useNavigate();
     const [termoBusca, setTermoBusca] = useState('');
 
     const handleInputChange = (e) => {
@@ -51,7 +51,7 @@ export default function ClienteLista() {
     });
 
     const novoCliente = () => {
-        history.push('/cliente/detalhe');
+        navigate('/cliente/detalhe');
 
     };
 
@@ -95,7 +95,7 @@ export default function ClienteLista() {
                                 <div>
                                     <button
                                         className="btn btn-sm btn-outline-primary me-2"
-                                        onClick={() => history.push(`/cliente/detalhe/${cliente.id}`)}>
+                                        onClick={() => navigate(`/cliente/detalhe/${cliente.id}`)}>
                                         <i className='fas fa-user-edit me-2'></i>
                                         Editar
                                     </button>
